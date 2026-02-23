@@ -1,0 +1,1 @@
+API_URL="https://ai-chatbot-i2yi.onrender.com"
