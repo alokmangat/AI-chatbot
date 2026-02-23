@@ -43,7 +43,10 @@ index=pc.Index(PINECONE_INDEX_NAME)
 # load,split,embed and upsert pdf docs content
 
 def load_vectorstore(uploaded_files):
-    embed_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+    embed_model = GoogleGenerativeAIEmbeddings(
+    model="models/text-embedding-004",
+    google_api_key=GOOGLE_API_KEY
+)
     file_paths = []
 
     for file in uploaded_files:
